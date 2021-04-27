@@ -5,6 +5,8 @@
 #include <string.h>
 #include <dirent.h>
 
+void printStat(char *PATH);
+
 int main(int argc, char *argv[]) {
     if (argc > 3 && argc < 1) {                             // Check if command is used successfully
         printf("Usage: myls (-OPTIONS) (DIRNAME)\n");
@@ -29,9 +31,16 @@ int main(int argc, char *argv[]) {
     struct dirent *entry;  
 
     while ((entry = readdir(d)) != NULL) {
+        if (longer == 0) {
+            printStat(entry->d_name);
+        }
         printf("%s\n", entry->d_name);
     }
 
     closedir(d);
     return 0;
+}
+
+void printStat(char *PATH) {
+    
 }
