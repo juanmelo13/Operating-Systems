@@ -5,4 +5,4 @@ and some of the tools it uses in order to provide the user experience that we kn
 Projects included:
   * Process Fork -- 2/1/2021
   * Memsim -- 3/2/2021
-  * Percistence -- 4/28/2021
+  * Persistence -- 4/28/2021
